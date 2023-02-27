@@ -1,0 +1,28 @@
+{
+  "name": "cypress-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:open": "cypress open",
+    "test:headless": "npm run clear && cypress run --headless",
+    "clear": "rm -r cypress/videos/* cypress/downloads/* screenshots/* cypress/reports/* || true",
+    "list:spec:names": "npx find-cypress-specs --names",
+    "count:by:tags": "npx find-cypress-specs --tags"
+  },
+  
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cypress/grep": "^3.1.4",
+    "@testing-library/cypress": "^9.0.0",
+    "@types/mochawesome": "^6.2.1",
+    "cypress": "^12.5.1",
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "cypress-multi-reporters": "^1.6.2",
+    "find-test-names": "^1.26.0",
+    "mocha": "^10.2.0",
+    "mocha-junit-reporter": "^2.2.0",
+    "typescript": "^4.9.5"
+  }
+}

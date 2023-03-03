@@ -28,7 +28,7 @@ export default defineConfig({
     },
     baseUrl: 'https://lab.izio.com.br/',
     fixturesFolder: 'cypress/fixtures/',
-    specPattern: 'cypress/specs/*.cy.ts',
+    specPattern: 'cypress/e2e/*.cy.ts',
     screenshotsFolder: 'screenshots/',
     supportFile: 'cypress/support/',
     video: false,

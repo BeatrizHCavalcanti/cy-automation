@@ -1,4 +1,4 @@
-/// <reference path="../../support/index.ts" />
+/// <reference path="../../../support/index.ts" />
 
 import loginElements from './login.elements';
 

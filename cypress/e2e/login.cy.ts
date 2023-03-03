@@ -1,6 +1,8 @@
 /// <reference path="../support/index.ts" />
 
-import loginPage from "../page/login/login.page";
+///// <reference path="../support/index.ts" />
+
+import loginPage from "./login/page/login.page"
 
 describe('Login', { tags: ['hml', '@login'] }, () => {
     const user = Cypress.env('user');
@@ -13,5 +15,7 @@ describe('Login', { tags: ['hml', '@login'] }, () => {
         loginPage.preencherUsuario(user);
         loginPage.preencherSenha(password);
         loginPage.clicarBtnEntrar();
+        
     })
+    
 })
